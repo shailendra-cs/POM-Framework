@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PC Application Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+	<test name="PC App Test Cases">
+	<parameter name="uname" value=""/>
+	<parameter name="pwd" value=""/>
+		<classes>
+			<class name="com.crm.qa.testcases.LoginPageTest"></class>
+		</classes>
+	</test>
+</suite>
