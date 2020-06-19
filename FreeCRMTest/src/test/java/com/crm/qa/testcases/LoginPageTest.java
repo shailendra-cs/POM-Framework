@@ -35,7 +35,7 @@ public class LoginPageTest extends TestBase{
 
 		testUtil.runTimeInfo("info", title);
 
-		if (title.equals("Prime Cloud V5.8.0.011")) {
+		if (title.equals("Free CRM #1 cloud software for any business large or small")) {
 			testUtil.runTimeInfo("info", "title is correct!! YAY!!!");
 			Assert.assertTrue(true);
 		} else {

@@ -10,10 +10,13 @@ import com.crm.qa.base.TestBase;
 public class LoginPage extends TestBase{
 	
 	//Page Factory - OR:
-	@FindBy(id="User_UserName")
+	@FindBy(name="email")
+	WebElement login;
+	
+	@FindBy(name="email")
 	WebElement username;
 	
-	@FindBy(id="User_Password")
+	@FindBy(name="password")
 	WebElement password;
 	
 	@FindBy(id="btnSubmit")
@@ -30,6 +33,7 @@ public class LoginPage extends TestBase{
 	}
 	
 	public HomePage login(String un, String pwd){
+		login.click();
 		username.sendKeys(un);
 		password.sendKeys(pwd);
 		//loginBtn.click();
