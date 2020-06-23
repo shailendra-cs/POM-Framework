@@ -10,7 +10,6 @@
           <include name="validCredentailsForBoth"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="loginPageTitleTest"/>
           <include name="loginTest"/>
           <include name="blankCredentailsForBoth"/>
           <include name="invalidUserName"/>

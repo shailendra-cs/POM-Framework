@@ -48,6 +48,7 @@ public class LoginPageTest extends TestBase{
 
 	@Test(priority=2)
 	public void loginTest(){
+		
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		try {
 			testUtil.takeScreenshotAtEndOfTest();
@@ -59,7 +60,7 @@ public class LoginPageTest extends TestBase{
 
 	@Test(priority=3)
 	public void invalidUserName(){
-		homePage = loginPage.login("", "ashu@001");
+		homePage = loginPage.login("", "Test@001");
 		try {
 			testUtil.takeScreenshotAtEndOfTest();
 		} catch (IOException e) {

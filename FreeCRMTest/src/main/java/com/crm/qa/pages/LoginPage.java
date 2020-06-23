@@ -21,7 +21,7 @@ public class LoginPage extends TestBase{
 	@FindBy(name="password")
 	WebElement password;
 	
-	@FindBy(id="btnSubmit")
+    @FindBy(xpath=".//*[@class='ui fluid large blue submit button']")
 	WebElement loginBtn;
 	
 	//Initializing the Page Objects:
@@ -38,7 +38,7 @@ public class LoginPage extends TestBase{
 		login.click();
 		username.sendKeys(un);
 		password.sendKeys(pwd);
-		//loginBtn.click();
+		loginBtn.click();
 		    	JavascriptExecutor js = (JavascriptExecutor)driver;
 		    	js.executeScript("arguments[0].click();", loginBtn);
 		    	
