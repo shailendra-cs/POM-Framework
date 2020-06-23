@@ -10,8 +10,10 @@ import com.crm.qa.base.TestBase;
 public class LoginPage extends TestBase{
 	
 	//Page Factory - OR:
-	@FindBy(name="email")
-	WebElement login;
+	@FindBy(xpath="//a[@href='https://ui.freecrm.com']")
+
+		//a[@class='dropdown-toggle']
+		WebElement login;
 	
 	@FindBy(name="email")
 	WebElement username;
